@@ -22,31 +22,34 @@ function lucidLog(uid,value) {
 $(document).ready(function() {
 
 
-//Lucid_LucidBinding_0_23_1933605140231557929553744339
+//Lucid_LucidBinding_0_23_1105922042760795109565762725
 /*lucidcode*/
-$(/*luc!d_element*/document/*luc!d_element_end*/).bind(/*luc!d_event*/'ready'/*luc!d_event_end*/, function(event) {    
-/*luc!d_debug*/	lucidDebug('1933605140231557929553744339',event);/*luc!d_debug_end*/
-	/*luc!d_function*/mouseClick(this,event)/*luc!d_function_end*/;    });
+$(/*luc!d_element*/'DIV.#startAnimate'/*luc!d_element_end*/).bind(/*luc!d_event*/'click'/*luc!d_event_end*/, function(event) {    
+/*luc!d_debug*/	lucidDebug('1105922042760795109565762725',event);/*luc!d_debug_end*/
+	/*luc!d_function*/shakeUpDown(this,event)/*luc!d_function_end*/;    });
+/*lucidcode_end*/
+//EndLucid
+
+//Lucid_LucidBinding_100_23_984879294623431821977323785
+/*lucidcode*/
+$(/*luc!d_element*/'TT.#changeBinding'/*luc!d_element_end*/).bind(/*luc!d_event*/'click'/*luc!d_event_end*/, function(event) {    
+/*luc!d_debug*/	lucidDebug('984879294623431821977323785',event);/*luc!d_debug_end*/
+	/*luc!d_function*/removeBinding(this,event)/*luc!d_function_end*/;    });
+/*lucidcode_end*/
+//EndLucid
+
+//Lucid_LucidBinding_200_23_1815963872867205540151998591
+/*lucidcode*/
+$(/*luc!d_element*/'TT.#revertBinding'/*luc!d_element_end*/).bind(/*luc!d_event*/'click'/*luc!d_event_end*/, function(event) {    
+/*luc!d_debug*/	lucidDebug('1815963872867205540151998591',event);/*luc!d_debug_end*/
+	/*luc!d_function*/removeBinding1(this,event)/*luc!d_function_end*/;    });
 /*lucidcode_end*/
 //EndLucid
 
 
 });
 
-//Lucid_LucidBindingAction_18_156_6949080921304229858825638477
-function mouseClick(senderObject, event) {
-	lucidDebug('6949080921304229858825638477',event);
-/*lucidcode*/
-$(/*luc!d_bindto*/document.body/*luc!d_bindto_end*/).bind(/*luc!d_event*/'click'/*luc!d_event_end*/, function(event) {	/*luc!d_function*/shakeUpDown(this,event);/*luc!d_function_end*/
-    });
-/*lucidcode_end*/
-
-/*luc!d_callback*/keyDown(senderObject,event);/*luc!d_callback_end*/
-
-}
-//EndLucid
-
-//Lucid_LucidJQueryUIEffectAction_147_253_9489707552137916663268973437
+//Lucid_LucidJQueryUIEffectAction_177_501_9489707552137916663268973437
 function shakeUpDown(senderObject, event) {
 	lucidDebug('9489707552137916663268973437',event);
 /*lucidcode*/
@@ -60,7 +63,7 @@ $(/*luc!d_element*/'DIV.#bluebox'/*luc!d_element_end*/).effect(/*luc!d_effect*/'
 }
 //EndLucid
 
-//Lucid_LucidJQueryUIEffectAction_26_375_6644134922030079291322460301
+//Lucid_LucidJQueryUIEffectAction_177_391_6644134922030079291322460301
 function shakeLeftRight(senderObject, event) {
 	lucidDebug('6644134922030079291322460301',event);
 /*lucidcode*/
@@ -74,11 +77,42 @@ $(/*luc!d_element*/'DIV.#bluebox'/*luc!d_element_end*/).effect(/*luc!d_effect*/'
 }
 //EndLucid
 
-//Lucid_LucidBindingAction_18_260_1680652302870830723950907156
-function keyDown(senderObject, event) {
-	lucidDebug('1680652302870830723950907156',event);
+//Lucid_LucidBindingAction_176_287_1982173405474601924880271710
+function binding(senderObject, event) {
+	lucidDebug('1982173405474601924880271710',event);
 /*lucidcode*/
-$(/*luc!d_bindto*/document.body/*luc!d_bindto_end*/).bind(/*luc!d_event*/'keydown'/*luc!d_event_end*/, function(event) {	/*luc!d_function*/shakeLeftRight(this,event);/*luc!d_function_end*/
+$(/*luc!d_bindto*/'DIV.#startAnimate'/*luc!d_bindto_end*/).bind(/*luc!d_event*/'click'/*luc!d_event_end*/, function(event) {	/*luc!d_function*/shakeLeftRight(this,event);/*luc!d_function_end*/
+    });
+/*lucidcode_end*/
+
+}
+//EndLucid
+
+//Lucid_LucidCustomAction_176_175_211982586511596093251139828750
+function removeBinding(senderObject, event) {
+	lucidDebug('211982586511596093251139828750',event);
+/*lucidcode*/$('DIV.#startAnimate').unbind('click');/*lucidcode_end*/
+
+/*luc!d_callback*/binding(senderObject,event);/*luc!d_callback_end*/
+
+}
+//EndLucid
+
+//Lucid_LucidCustomAction_337_174_190862112212319622151699106778
+function removeBinding1(senderObject, event) {
+	lucidDebug('190862112212319622151699106778',event);
+/*lucidcode*/$('DIV.#startAnimate').unbind('click');/*lucidcode_end*/
+
+/*luc!d_callback*/binding_1(senderObject,event);/*luc!d_callback_end*/
+
+}
+//EndLucid
+
+//Lucid_LucidBindingAction_337_286_177054273019782502781110599492
+function binding_1(senderObject, event) {
+	lucidDebug('177054273019782502781110599492',event);
+/*lucidcode*/
+$(/*luc!d_bindto*/'DIV.#startAnimate'/*luc!d_bindto_end*/).bind(/*luc!d_event*/'click'/*luc!d_event_end*/, function(event) {	/*luc!d_function*/shakeUpDown(this,event);/*luc!d_function_end*/
     });
 /*lucidcode_end*/
 

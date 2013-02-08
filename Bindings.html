@@ -17,11 +17,15 @@
 	
 	<H1>Binding Block Example</H1>
 
-<dfn>This is an example of using the "Binding Block" to establish bindings for the mouse-click and the keypress events.</dfn><br><br><br>
-<tt>Mouse Click in the page to make the box shake up and down</tt><br><br>
-<tt>After clicking in the page, press any key to make the box shake side to side</tt>
+<dfn>This is an example of using the "Binding Block" to establish bindings for the mouse-click event.</dfn><br><br>
+<tt>1. Mouse Click the animate-button to make the box shake 'up and down'</tt><br><br>
+<div style="">2. &nbsp&nbsp<a href="#"><tt id="changeBinding">After clicking here, the animate button will make the box shake 'side to side'</tt></a></div><br>
+<div style="">3. &nbsp&nbsp<a href="#"><tt id="revertBinding">After clicking here, the animate button goes back to 'up and down'</tt></a></div><br>
 
+<div style="position:absolute;left:100px;width:213px;height:196px;background-color:#0000FF"  id="bluebox" class="generalboxes">
+</div>
 
-<div style="position:absolute;top:200px;left:258px;width:213px;height:196px;background-color:#0000FF"  id="bluebox" class="generalboxes">
+<div style="position:absolute;top:298px;left:349px;width:103px;height:39px;background-color:#694F1C;text-align:center;color:#E6E6E6;cursor:pointer" id="startAnimate" >
+Click here to animate
 </div>
 </BODY></HTML>
